@@ -1,6 +1,5 @@
 import { Lobster, Poppins, Raleway } from 'next/font/google'
 import './globals.scss'
-import Web_icon from './assets/skills/Html.png'
 
 
 const lobster = Lobster({ subsets: ['latin'], weight: '400', })
