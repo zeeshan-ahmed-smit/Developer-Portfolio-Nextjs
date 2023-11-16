@@ -1,0 +1,132 @@
+@import '../../mixins.scss';
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 100px 10px 10px 10px;
+
+    .heading {
+        display: flex;
+        justify-content: center;
+
+        & h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            font-weight: bold;
+            color: #111;
+        }
+    }
+
+    .line {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        & div {
+            height: 5px;
+            width: 50px;
+            background: #5651e5;
+            border-radius: 5px;
+            margin-top: 20px;
+
+        }
+    }
+
+    .info {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include lg {
+            flex-wrap: nowrap;
+        }
+
+        .info-sec-1 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            width: 600px;
+
+            .title {
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-bottom: 20px;
+                @include md{
+                    font-size: 2em;
+                }
+            }
+
+            .details-para {
+                font-size: 16px;
+                color: #666;
+                max-width: 60rem;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+                @include md{
+                    font-size: 18px;
+                }
+
+                & strong {
+                    font-weight: bold;
+                }
+
+                & a {
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #5651e5;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .contact-btn {
+                width: 200px;
+                margin-top: 20px;
+                padding: 15px 0px;
+                text-align: center;
+                font-size: 20px;
+                border: none;
+                text-transform: uppercase;
+                background: #5651e5;
+                letter-spacing: 1px;
+                display: inline-block;
+                font-weight: bold;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all .3s;
+                text-decoration: none;
+                color: #ffffff;
+
+                &:hover {
+                    transform: translateY(-3px)translateX(-3px);
+                    box-shadow: 5px 5px 0px rgba(0, 0, 0, .15);
+                }
+
+                &:active {
+                    transform: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .info-sec-2 {
+            width: 500px;
+            margin-left: 0px;
+            @include lg {
+                margin-left: 40px;
+            }
+
+            & img{
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
+}

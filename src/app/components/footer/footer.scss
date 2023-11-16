@@ -1,0 +1,78 @@
+@import '../../mixins.scss';
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.81);
+
+    .title {
+        font-size: 38px;
+        color: #5651e5;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: 'Lobster', sans-serif;
+
+        @include md {
+            font-size: 40px;
+        }
+    }
+
+    .heading {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .end-text {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0px 15px;
+        gap: 50px;
+
+        @include xl {
+            gap: 0px;
+        }
+
+
+        .socialIcon {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            gap: 10px;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                border-radius: 50%;
+                display: flex;
+                background: #ffffff;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all ease 0.3s;
+
+                @include md {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    box-shadow: 0 0 0.625em #000000;
+                }
+            }
+        }
+
+    }
+
+}
