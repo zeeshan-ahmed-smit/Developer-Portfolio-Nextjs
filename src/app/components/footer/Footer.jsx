@@ -12,7 +12,7 @@ function Footer() {
     return (
 
         <div className='footer'>
-            <a className='title' href='/'>Zeeshan Afridi</a>
+            <a className='title' href='/'>Zeeshan Ahmed</a>
             <h1 className='heading'>Social Media</h1>
             <div className="content">
                 <div className="socialIcon">

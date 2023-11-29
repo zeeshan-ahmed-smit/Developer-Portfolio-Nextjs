@@ -36,7 +36,7 @@ function NavBar() {
     return (
         <div className={`header ${show}`}>
             <div className="nav">
-                <div className="title">Zeeshan Afridi</div>
+                <div className="title">Zeeshan Ahmed</div>
                 <ul className='items'>
                     <li ><a className='listItem' href='/'>Home</a></li>
                     <li ><a className='listItem' href='/#about'>About</a></li>

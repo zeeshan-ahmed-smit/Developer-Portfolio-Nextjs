@@ -11,7 +11,7 @@ function Home() {
                         LET&#39;S BUILD SOMETHING TOGETHER
                     </p>
                     <h1 className='heading'>
-                        Hi, I&#39;m <span style={{ color: '#5651e5' }}> Zeeshan Afridi</span>
+                        Hi, I&#39;m <span style={{ color: '#5651e5' }}> Zeeshan Ahmed</span>
                     </h1>
                     <h1 className='heading'>A Front-End Web Developer</h1>
                     <p className='sub-text'>
